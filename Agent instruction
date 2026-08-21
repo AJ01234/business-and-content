@@ -1,0 +1,13 @@
+# AGENTS.md — Read this first
+
+This repo's real operating files live in **`Imp/`**, not scattered across the root.
+Before doing anything in this repository:
+
+1. Read **`Imp/AGENTS.md`** — full orientation for any coding agent.
+2. Then **`Imp/goal.md`** — the 12-month operating goal (⚠️ ignore the `goal.md` at
+   repo root — it's an old, stale copy; `Imp/goal.md` is current).
+3. Then **`Imp/context/`** and **`Imp/system/`** as needed for the task.
+
+Everything else at repo root (`Context folder/`, `Fable 5/`, `About me`, `Process`,
+`tools.md`, `time.md`, `failure.md`, `Master_Context.md`, `history/`, `Work/`) is
+historical/raw source material kept for reference — not the operating source of truth.
