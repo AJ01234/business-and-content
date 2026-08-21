@@ -16,7 +16,12 @@ repo, read this file first — it's the front door.
 3. **`system/`** — the operating systems built on top of the context: the weekly
    reel-production cycle, message templates, the offer sheet, the second-brain
    capture pipeline. See `system/README.md`.
-4. **`.claude/skills/`** — Claude Code's own trigger-loaded skill format (11 skills
+4. **`skills/`** — project reasoning/operating skills, including the metacognition
+   and high-agency execution protocol.
+5. **`conversation-audit-2026-08.md` and `context/context-ledger.md`** — audit layers
+   that record durable instructions, recent corrections, uncertainty, conflicts,
+   and source status. Use them to avoid silently treating old assumptions as facts.
+6. **`.claude/skills/`** — Claude Code's own trigger-loaded skill format (11 skills
    covering the same ground as this file, but auto-triggered by task type). If you
    are Codex or another agent that doesn't read this format natively, treat each
    `SKILL.md` inside as a plain reference doc — they're well-organized and worth
@@ -33,6 +38,17 @@ repo, read this file first — it's the front door.
 - **Money is in ₹ (INR).** Atishay is based in Kanpur, India.
 - **His name is Atishay** — not Ashutosh (his childhood best friend/co-founder) or
   any other transcription variant. This got corrected once already; don't reintroduce it.
+- **Latest direct user statements outrank stale context**, but preserve the old
+  statement as SUPERSEDED/CONFLICTED where it explains previous decisions.
+- **Do not confuse coaching hypotheses with facts.** Metacognition patterns are
+  observations to test, not diagnoses.
+
+## Context audit protocol
+- `context/context-ledger.md` is the lightweight fact-status ledger.
+- `conversation-audit-2026-08.md` captures durable reasoning preferences and
+  current-conversation instructions.
+- When Atishay corrects a fact, update the canonical topic file first when one
+  exists, then update the ledger/audit status. Do not silently rewrite history.
 
 ## Known repo hygiene issue (as of Aug 2026)
 This repo has accumulated some manual-upload duplication (a "Context folder" and a
@@ -43,4 +59,4 @@ and flag the duplication to the user rather than silently picking one.
 
 ## How to re-verify this file
 Check it still matches the actual folder structure (`ls` the repo root); update the
-"read in this order" section if new top-level folders are added.
+"read in order" section if new top-level folders are added.
